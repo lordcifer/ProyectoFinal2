@@ -1,0 +1,42 @@
+﻿@model ProyectFinal2.Models.CONTACTO
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CONTACTO</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.APELLIDO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.APELLIDO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DOCUMENTOS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DOCUMENTOS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FECHA_CREACION)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FECHA_CREACION)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.NOMBRE }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
